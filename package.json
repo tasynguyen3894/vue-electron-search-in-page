@@ -4,5 +4,54 @@
   "main": "index.js",
   "repository": "https://github.com/tasynguyen3894/vue-electron-search-in-page.git",
   "author": "tasynguyen3894 <thaisang.nguyen3894@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*.d.ts"
+      ]
+    }
+  },
+  "exports": {
+    "./vue": {
+      "import": "./dist/vue.js",
+      "require": "./dist/vue.cjs",
+      "type": "./dist/vue.d.ts"
+    },
+    "./main": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs",
+      "type": "./dist/main.d.ts"
+    },
+    "./preload": {
+      "import": "./dist/preload.js",
+      "require": "./dist/preload.cjs",
+      "type": "./dist/preload.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.0"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "dependencies": {
+    "builtin-modules": "^3.3.0",
+    "electron": "^28.1.1",
+    "electron-updater": "^6.1.7",
+    "h3": "^1.9.0",
+    "vite-plugin-commonjs-externals": "^0.1.4",
+    "vitest": "^1.2.0",
+    "vue": "^3.4.3"
+  }
 }

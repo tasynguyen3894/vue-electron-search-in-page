@@ -49,7 +49,6 @@
     "builtin-modules": "^3.3.0",
     "electron": "^28.1.1",
     "electron-updater": "^6.1.7",
-    "h3": "^1.9.0",
     "vite-plugin-commonjs-externals": "^0.1.4",
     "vitest": "^1.2.0",
     "vue": "^3.4.3"

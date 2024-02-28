@@ -1,6 +1,6 @@
 {
   "name": "vue-electron-search-in-page",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "main": "index.js",
   "repository": "https://github.com/tasynguyen3894/vue-electron-search-in-page.git",
   "author": "tasynguyen3894 <thaisang.nguyen3894@gmail.com>",
